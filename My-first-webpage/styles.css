@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: blueviolet;
+  background-color:beige;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #b5432b;
+  text-align: center;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+  color: #2f6f5e;
+  font-size: 1.5rem;
+}
+
+/* Header */
+.site-header {
+  padding: 3rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #6b6b6b;
+  font-size: 1.1rem;
+}
+
+/* Nav */
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #e0d9cd;
+  border-bottom: 1px solid #e0d9cd;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  color: #2f6f5e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card.highlight {
+  background-color: #f1e7d8;
+}
+
+blockquote {
+  font-style: italic;
+  color: #4a4a4a;
+  border-left: 4px solid #b5432b;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  text-align: right;
+  color: #2f6f5e;
+}
+
+code {
+  background-color: #f1e7d8;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Favorite places page */
+.place-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.place-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.place-card img {
+  width: 45%;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.place-text a {
+  color: #b5432b;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .place-card,
+  .place-card.reverse {
+    flex-direction: column;
+  }
+  .place-card img {
+    width: 100%;
+  }
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #2f6f5e;
+}
